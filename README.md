@@ -1,8 +1,8 @@
 # Redesign of SmartLight.ai's Website: A Case Study
 ### Why 
-For many startups, it is top priority for more time to be allocated to the research and development of the product. As a result of this, this could mean that there is less time spent on other aspects, for instance the website.
+For many startups, it is top priority for more time to be allocated to the research and development of the product. Other areas of the business can be neglec
 
-First impressions count, especially for startups looking to seek out potential investors. With first point aside from pitching, being the website.
+**First impressions count**, especially for businesses looking to seek out potential investors. With first point typically being the website. A good website can reinforce the positive ideas an investor has about the business, whilst a bad website further negatively impacts the busienss. 
 
 For Sept 2024 mobile devices make up **61.72%** of internet traffic, whilst desktops fall short with **36.29%** *Statcounter (2024)* 
 
@@ -12,18 +12,35 @@ For Sept 2024 mobile devices make up **61.72%** of internet traffic, whilst desk
   - Accessability
   - Best Practice
   - SEO 
-- Create a premium feel
+- Similar UX for Mobile & Desktop 
+
+### Planning
+I wanted to stay close to the minimalist theme the website had before.
+I searched for minimalist focused [inspiration](https://minimal.gallery/tag/startup/) that other startup's websites had used  
+
+- Use of animation while scrolling
+- Big eye catching text
+
+### SVG
+I noticed that the website had a Logo in .PNG form. I wanted to use SVG as they are smaller in file size
+Using SVG I recreated the logo.
 
 ### Before
-Mobile
-![Mobile Score for website before redesign](images/before-mobile-insights.png "Mobile Score")
-Desktop
-![Desktop Score for website before redesign](images/before-desktop-insights.png "Desktop Score")
+Score using https://pagespeed.web.dev/
+
+![Mobile Score for website before redesign](/readme-images/before-mobile-insights.png "Mobile Score")
+
+![Desktop Score for website before redesign](/readme-images/before-desktop-insights.png "Desktop Score")
+
+### After
+
+
+
+
 
 ### References 
 
-Score using https://pagespeed.web.dev/
 
 Statcounter (2024). Desktop vs Mobile vs Tablet Market Share Worldwide | StatCounter Global Stats. [online] StatCounter Global Stats. Available at: https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet.
 
-‌
+*Disclaimer: I am not affiliated or associated with Smartlight, this repository exists to document the process of redesigning a page for a website. Changes made are *

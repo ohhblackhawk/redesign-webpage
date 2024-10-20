@@ -22,8 +22,9 @@ I searched for minimalist focused [inspiration](https://minimal.gallery/tag/star
 - Big eye catching text
 
 ### SVG
-I noticed that the website had a Logo in .PNG form. I wanted to use SVG as they are smaller in file size
-Using SVG I recreated the logo.
+I noticed that the website had a Logo in .PNG form. I wanted to use recreate the logo as a SVG as they bring advantages such as file size, and better resizing for different resolutions.
+After conducting research to logo's used by other brands, they aimed at simplicity and the use of colors. Using this I focused on simplifying the logo to keep the most important features. The psychology of blue reinforces the ideas of saftey and efficiency.
+
 
 ### Before
 Score using https://pagespeed.web.dev/
@@ -43,4 +44,4 @@ Score using https://pagespeed.web.dev/
 
 Statcounter (2024). Desktop vs Mobile vs Tablet Market Share Worldwide | StatCounter Global Stats. [online] StatCounter Global Stats. Available at: https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet.
 
-*Disclaimer: I am not affiliated or associated with Smartlight, this repository exists to document the process of redesigning a page for a website. Changes made are *
+*Disclaimer: I am not affiliated or associated with Smartlight, this repository exists to document the process of redesigning a page for a website. Changes made are with my own considerations*

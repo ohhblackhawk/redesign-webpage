@@ -4,27 +4,50 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SmartLight: Helping local authorities reach their Net Zero goals</title>
+        <style>
+            .landing{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                min-height: 100dvh;
+                text-align: center;
+            }
+            svg {
+                width: 100%;
+                max-width: 400px;
+                display: inline-block;
+            }
+        </style>
 
     </head>
     <body>
-        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+        <div class="landing">
+        <svg viewBox="0 0 80 70" xmlns="http://www.w3.org/2000/svg">
             <!-- bottom lines-->
+            <g>
             <rect x="33" y="50.5" width="14" height="3" fill="#000000" rx="2" ry="2"/>
             <rect x="34.5" y="54" width="11" height="3" fill="#000000" rx="2" ry="2"/>
             <rect x="36" y="57.5" width="8" height="3" fill="#000000" rx="2" ry="2"/>
+            </g>
             <!-- top bulb -->
             <path d="
                     M 40 20 
                     Q 61 20 46 48
                     L 34 48 
                     Q 20 20 40 20 z"
-            fill="none" stroke="#000000" stroke-width="3"/>
-            <!-- light -->
-            <!-- top line -->
-            <rect x="39" y="6" width="2" height="10" fill="#000000" rx="2" ry="2"/>
+            fill="#348feb" stroke="#000000" stroke-width="3"/>
         </svg>
+        <h2>SmartLight</h2>
+        <div class="links">
+            <a href="#problem">Problem</a>
+            <a href="#solution">Solution</a>
+            <a href="#traction">Traction</a>
+            <a href="mailto:will@smartlight.ai">Contact Us</a>
+        </div>
 
-        <p><a href="mailto:will@smartlight.ai">Contact Us</a></p>
+        </div>
         <div id="problem">
             <h2>The Problem</h2>
             <p>Councils user unprecedented financial pressure</p>

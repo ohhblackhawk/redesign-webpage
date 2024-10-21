@@ -5,20 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SmartLight: Helping local authorities reach their Net Zero goals</title>
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+            body{
+                font-family: "Roboto",sans-serif;
+            }
+
             .landing{
                 display:flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                overflow: hidden;
                 min-height: 100vh;
                 min-height: 100dvh;
                 text-align: center;
             }
+            /* svg */
             svg {
                 width: 100%;
                 max-width: 400px;
                 display: inline-block;
             }
+
+            /* images */
+            #road_img , #device_img, #lamp_and_road_img{
+                display: block;
+                max-width: 350px;
+                width: 100%;
+                margin: 0 auto;
+            }
+
         </style>
 
     </head>
@@ -43,12 +59,15 @@
         <h4>Helping local authorities reach their Net Zero goals</h4>
         <div class="links">
             <a href="#problem">Learn about the Challenge</a>
+            <span> | </span>
             <a href="#solution">Discover Our Solution</a>
+            <span> | </span>
             <a href="#traction">See Our Progress</a>
+            <span> | </span>
             <a href="mailto:will@smartlight.ai">Contact Us</a>
         </div>
-
         </div>
+        <hr>
         <div id="problem">
             <h2>The Problem</h2>
             <p>Councils user unprecedented financial pressure</p>
@@ -62,8 +81,9 @@
                 <li>Adaptive control could save 80-90% over current technology (Dizon & Pranggono, 2022)</li>
                 <li>Authorities forced to choose between extremes: Saftey (Always On) Vs Cost-Saving (Part-Night Dimming)</li>
             </ul>
+            <img alt="Road side image" src="images/road.webp" id="road_img">
         </div>
-        <br>
+        <hr>
         <div id="solution">
             <h2>Our Solution</h2>
             <p>Introduces AIoT Technologies to the Streetlighting Industry</p>
@@ -84,8 +104,9 @@
                 <li>People & Vehicles detedted in real time</li>
                 <li>Maximum and Minimum power value schedules configurable based on collected data and industry guidelines</li>
             </ul>
+            <img src="images/device.webp" id="device_img">
         </div>
-       <br> 
+        <hr>
        <div id="traction">
             <h2>Our Traction</h2>
             <p>Partners</p>
@@ -101,6 +122,7 @@
                 <li>Patent Published</li>
                 <li>SEIS/EIS Compliant</li>
             </ul>
+            <img src="images/lampAndRoadImage.webp" id="lamp_and_road_img">
        </div>
 
     </body>

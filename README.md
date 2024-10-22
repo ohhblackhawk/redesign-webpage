@@ -23,7 +23,16 @@ I searched for minimalist focused [inspiration](https://minimal.gallery/tag/star
 
 ### SVG
 I noticed that the website had a Logo in .PNG form. I wanted to use recreate the logo as a SVG as they bring advantages such as file size, and better resizing for different resolutions.
-After conducting research to logo's used by other brands, they aimed at simplicity and the use of colors. Using this I focused on simplifying the logo to keep the most important features. The psychology of blue reinforces the ideas of saftey and efficiency.
+After conducting research to logo's used by other brands, they aimed at simplicity and the use of colors as a result these are the current changes made.
+- Simplifying the logo to keep the most important features.
+- The psychology of blue reinforces the ideas of saftey and efficiency.
+- Animation to bring life
+
+### Information (Scroll)
+Initially how the information that was presented was static and in big blocks of text.
+The goal of this section was to allow the user to digest the information in small chunks, so the mission the startup was aiming for was clear. 
+
+
 
 
 ### Before

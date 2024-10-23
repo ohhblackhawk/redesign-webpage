@@ -35,18 +35,23 @@
             0% {
                 transform: translateY(0);
             }
+
             20% {
                 transform: translateY(-5px);
             }
+
             30% {
                 transform: translateY(0px);
             }
+
             40% {
                 transform: translateY(-2px);
             }
+
             60% {
                 transform: translateY(0px);
             }
+
             100% {
                 transform: translateY(0);
             }
@@ -54,6 +59,13 @@
 
         #topbulb {
             animation: bounce 1.2s ease-out;
+        }
+        .card{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 2px;
+            width: 300px;
         }
 
         /* images */
@@ -100,18 +112,31 @@
     <hr>
     <div id="problem">
         <h2>The Problem</h2>
-        <p>Councils user unprecedented financial pressure</p>
-        <ul>
-            <li>Electricity unit prices paid by authorities climbed 120% in 2022</li>
-            <li>Streetlighting accounts for 40% of local authority electrical spend.</li>
-        </ul>
-        <p>Most Streelighting Illuminating empty roads</p>
-        <ul>
-            <li>Current solutinos represent 1990's technology - No adaptive capability</li>
-            <li>Adaptive control could save 80-90% over current technology (Dizon & Pranggono, 2022)</li>
-            <li>Authorities forced to choose between extremes: Saftey (Always On) Vs Cost-Saving (Part-Night Dimming)
-            </li>
-        </ul>
+        <div class="card">
+            <div class="card-title">
+                <p>Councils user unprecedented financial pressure</p>
+            </div>
+            <div class="card-info">
+                <ul>
+                    <li>Electricity unit prices paid by authorities climbed 120% in 2022</li>
+                    <li>Streetlighting accounts for 40% of local authority electrical spend.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">
+                <p>Most Streelighting Illuminating empty roads</p>
+            </div>
+            <div class="card-info">
+                <ul>
+                    <li>Current solutinos represent 1990's technology - No adaptive capability</li>
+                    <li>Adaptive control could save 80-90% over current technology (Dizon & Pranggono, 2022)</li>
+                    <li>Authorities forced to choose between extremes: Saftey (Always On) Vs Cost-Saving (Part-Night
+                        Dimming)
+                    </li>
+                </ul>
+            </div>
+        </div>
         <img alt="Road side image" src="images/road.webp" id="road_img">
     </div>
     <hr>

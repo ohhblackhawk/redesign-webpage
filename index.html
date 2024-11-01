@@ -15,12 +15,16 @@
         html {
             scroll-snap-type: y mandatory;
         }
+
         .scroll-container {
             height: 100vh;
             scroll-snap-align: start;
             scroll-snap-stop: always;
         }
-        #problem, #solution, #traction{
+
+        #problem,
+        #solution,
+        #traction {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -76,13 +80,40 @@
             animation: bounce 1.2s ease-out;
         }
 
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-content: center;
+            justify-content: center;
+            
+        }
+
+        .card {
+            border-style: solid;
+            border-width: 2px;
+            border-color: #ccc;
+            max-width: 300px;
+            padding: 2px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .card-title{
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-left: 2px;
+        }
+
+        .card-content li{
+            list-style-type: none;
+            margin-bottom: 5px;
+        }
+
         /* images */
-        #road_img,
-        #device_img,
-        #lamp_and_road_img {
+        #device_img
+        {
             display: block;
-            max-width: 350px;
-            width: 100%;
+            max-height: 30%;
             margin: 0 auto;
         }
     </style>
@@ -121,66 +152,114 @@
         <hr>
         <div id="problem" class="scroll-container">
             <h2>The Problem</h2>
-            <p>Councils user unprecedented financial pressure</p>
-            <ul>
-                <li>Electricity unit prices paid by authorities climbed 120% in 2022</li>
-                <li>Streetlighting accounts for 40% of local authority electrical spend.</li>
-            </ul>
-            <p>Most Streelighting Illuminating empty roads</p>
-            <ul>
-                <li>Current solutinos represent 1990's technology - No adaptive capability</li>
-                <li>Adaptive control could save 80-90% over current technology (Dizon & Pranggono, 2022)
-                </li>
-                <li>Authorities forced to choose between extremes: Saftey (Always On) Vs Cost-Saving
-                    (Part-Night
-                    Dimming)
-                </li>
-            </ul>
-            <img alt="Road side image" src="images/road.webp" id="road_img">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-title">
+                        <p>Councils user unprecedented financial pressure</p>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Electricity unit prices paid by authorities climbed 120% in 2022</li>
+                            <li>Streetlighting accounts for 40% of local authority electrical spend.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <p>Most Streelighting Illuminating empty roads</p>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Current solutinos represent 1990's technology - No adaptive capability</li>
+                            <li>Adaptive control could save 80-90% over current technology (Dizon & Pranggono, 2022)
+                            </li>
+                            <li>Authorities forced to choose between extremes: Saftey (Always On) Vs Cost-Saving
+                                (Part-Night
+                                Dimming)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <hr>
         <div id="solution" class="scroll-container">
 
             <h2>Our Solution</h2>
-            <p>Introduces AIoT Technologies to the Streetlighting Industry</p>
-            <ul>
-                <li>Optical Sensors w/TinyML Computer Vision</li>
-                <li>AI-Accelerated Microcontrollers</li>
-                <li>Low-Cost Cellular connection to AWS IoT Core</li>
-            </ul>
-            <p>Lighting Industry Compliant</p>
-            <ul>
-                <li>DALI/NEMA C136.41 Plug-and-Play</li>
-                <li>Designed around BS 5489-1, BS EN13201, and ILP PLG08</li>
-                <li>UMSUG and Elexon CMS-Certified</li>
-                <li>CE/UKCA-marked</li>
-            </ul>
-            <p>Truly Adaptive Controls for Streetlighting for the first time</p>
-            <ul>
-                <li>People & Vehicles detedted in real time</li>
-                <li>Maximum and Minimum power value schedules configurable based on collected data and industry
-                    guidelines
-                </li>
-            </ul>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-title">
+                        <p>Introduces AIoT Technologies to the Streetlighting Industry</p>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Optical Sensors w/TinyML Computer Vision</li>
+                            <li>AI-Accelerated Microcontrollers</li>
+                            <li>Low-Cost Cellular connection to AWS IoT Core</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <p>Lighting Industry Compliant</p>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>DALI/NEMA C136.41 Plug-and-Play</li>
+                            <li>Designed around BS 5489-1, BS EN13201, and ILP PLG08</li>
+                            <li>UMSUG and Elexon CMS-Certified</li>
+                            <li>CE/UKCA-marked</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <p>Truly Adaptive Controls for Streetlighting for the first time</p>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>People & Vehicles detedted in real time</li>
+                            <li>Maximum and Minimum power value schedules configurable based on collected data and
+                                industry
+                                guidelines
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <img src="images/device.webp" id="device_img">
         </div>
         <hr>
         <div id="traction" class="scroll-container">
             <h2>Our Traction</h2>
-            <p>Partners</p>
-            <ul>
-                <li>Trials completed with Hull City Council</li>
-                <li>Trials underway with Urbis Schreder</li>
-                <li>Widespread deployment planned for 2024</li>
-            </ul>
-            <p>Product</p>
-            <ul>
-                <li>Product testing and certification complete</li>
-                <li>Production facility stand up</li>
-                <li>Patent Published</li>
-                <li>SEIS/EIS Compliant</li>
-            </ul>
-            <img src="images/lampAndRoadImage.webp" id="lamp_and_road_img">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-title">
+                        <p>Partners</p>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Trials completed with Hull City Council</li>
+                            <li>Trials underway with Urbis Schreder</li>
+                            <li>Widespread deployment planned for 2024</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <p>Product</p>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Product testing and certification complete</li>
+                            <li>Production facility stand up</li>
+                            <li>Patent Published</li>
+                            <li>SEIS/EIS Compliant</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="images/lampAndRoadImage.webp" id="lamp_and_road_img">
+            </div>
         </div>
     </div>
 

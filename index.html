@@ -80,6 +80,17 @@
             animation: bounce 1.2s ease-out;
         }
 
+        @keyframes slideLeft{
+            0%{
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100%{
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
         .card-container {
             display: flex;
             flex-wrap: wrap;
@@ -97,11 +108,20 @@
             padding: 2px;
             border-radius: 10px;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            animation: slideLeft 1s ease-in-out;
         }
         .card-title{
             font-weight: bold;
+            margin-left: 10px;
             margin-bottom: 10px;
             padding-left: 2px;
+        }
+
+        .card-content ul{
+            padding: 0px;
+            margin: 10px;
+
+
         }
 
         .card-content li{
